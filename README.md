@@ -4,7 +4,19 @@ Natural vim
 
 Natural vim is a set of defaults that I believe makes more sense than
 what comes shipped with vim. If you strongly disagree with any of these,
-please feel free to open an issue for discussion.
+please feel free to file an issue.
+
+
+Quick notes
+-----------
+
+* Backup
+All projects I'm involved in use some kind of vc. Darcs, git or svn and
+with that comes backup and since every other developer I know also use vc´s
+I've decided to turn off backup.
+* .exrc
+.exrc is enabled, but with the secure option. That means not all operations
+can be executed from .exrc, just a little gotcha.
 
 
 License

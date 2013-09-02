@@ -11,8 +11,12 @@ if exists('g:loaded_natural')
 else
   let g:loaded_natural = 1
 endif
-has('autocmd') && filetype plugin indent on
-has('syntax') && !exists('g:syntax_on') && syntax enable
+if has('autocmd')
+  filetype plugin indent on
+endif
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
 
 " I/O ------------------------------------------------------------------ {{{
   set ttyfast                         " Faster repeated editing
@@ -34,12 +38,14 @@ has('syntax') && !exists('g:syntax_on') && syntax enable
 
 " Wild menu ------------------------------------------------------------ {{{
   if has("wildmenu")
-    set wildmenu                      " Completions in a menu
-    set wildmode=list:longest,full    " Fine grained completion
-    set wildignore+=.hg,.git,.svn     " Version control
+    set wildmenu                             " Completions in a menu
+    set wildmode=list:longest,full           " Fine grained completion
+    set wildignore+=_darcs,.hg,.git,.svn     " Ignore vc directories
 
     " Case-insensitive completion
-    exists("&wildignorecase") && set wildignorecase
+    if exists("&wildignorecase")
+      set wildignorecase
+    endif
   endif
 " }}}
 
@@ -49,7 +55,7 @@ has('syntax') && !exists('g:syntax_on') && syntax enable
 
 " History -------------------------------------------------------------- {{{
   set history=32768                   " A longer history
-  set undolevels=&history             " Being able to change history can be useful to
+  set undolevels=1000                 " Changing history is useful to
 " }}}
 
 " Aesthetics ----------------------------------------------------------- {{{
