@@ -10,13 +10,12 @@ please feel free to file an issue.
 Quick notes
 -----------
 
-* Backup
-All projects I'm involved in use some kind of vc. Darcs, git or svn and
-with that comes backup and since every other developer I know also use vc´s
-I've decided to turn off backup.
-* .exrc
-.exrc is enabled, but with the secure option. That means not all operations
-can be executed from .exrc, just a little gotcha.
+* Backup and swap is stored to ~/.vim/x
+* .exrc is enabled with the secure option
+* :vb to open a buffer in vertical split
+* Navigation by row instead of line
+* Consistent yank behavior
+* Simple and global regexes by default
 
 
 License

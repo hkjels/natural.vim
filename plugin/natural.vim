@@ -31,7 +31,9 @@ endif
   set backspace=indent,eol,start      " Make backspace behave normally.
   set modelines=0                     " Prevents modeline exploits
   set nostartofline                   " Keep cursor-position when switching buffers
-  set nobk nowb                       " Turn off backup
+  set backup                          " Turn on backup
+  set backupdir=~/.vim/backup         " Where to store backup files
+  set directory=~/.vim/swap           " Where to store swap files
   set exrc                            " Source .exrc files automatically
   set secure                          " Prevent .exrc exploits
 " }}}
