@@ -84,7 +84,7 @@ endif
 " }}}
 
 " Indentation ---------------------------------------------------------- {{{
-  set cindent                         " C indentation rules"
+  set cindent                         " C indentation rules
   set autoindent                      " Indent based on ruleset of language
   set smartindent                     " Indent first line according to previous
   set smarttab                        " Use shiftwidth to emulate tabs
