@@ -34,8 +34,6 @@ endif
   set backup                          " Turn on backup
   set backupdir=~/.vim/backup         " Where to store backup files
   set directory=~/.vim/swap           " Where to store swap files
-  set exrc                            " Source .exrc files automatically
-  set secure                          " Prevent .exrc exploits
 " }}}
 
 " Wild menu ------------------------------------------------------------ {{{
@@ -81,6 +79,7 @@ endif
 " Text editing --------------------------------------------------------- {{{
   set spell                           " Use spell-checker
   set encoding=utf-8                  " Default encoding
+  set synmaxcol=500                   " Disable highlighting for lines longer than 500 chars
 " }}}
 
 " Indentation ---------------------------------------------------------- {{{
@@ -100,6 +99,8 @@ endif
   " Navigate by row instead of line
   nnoremap j gj
   nnoremap k gk
+  nnoremap gj j
+  nnoremap gk k
 
   " Make yank´s behavior consistent
   nnoremap Y y$
