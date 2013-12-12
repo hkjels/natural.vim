@@ -3,7 +3,7 @@
 " ===========
 "
 " Author: Henrik Kjelsberg <hkjels@me.com> (http://take.no/)
-" Version: 0.0.1
+" Version: 0.0.2
 "
 
 if exists('g:loaded_natural')

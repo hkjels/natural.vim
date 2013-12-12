@@ -1,25 +1,33 @@
 
-Natural vim
-===========
+# Natural.vim
 
-Natural vim is a set of defaults that I believe makes more sense than
+`Natural.vim` is a set of defaults that I believe makes more sense than
 what comes shipped with vim. If you strongly disagree with any of these,
-please feel free to file an issue.
+please feel free to file an issue or simply don't bother using it.
 
 
-Quick notes
------------
+## Quick notes
 
-* Backup and swap is stored to ~/.vim/x
-* .exrc is enabled with the secure option
+* Backup and swap is stored to ~/.vim/\(backup|swap\)
+* Much more history to work with
+* Keeps your cursor-position when switching buffers; yay!
 * :vb to open a buffer in vertical split
 * Navigation by row instead of line
 * Consistent yank behavior
 * Simple and global regexes by default
 
 
-License
--------
+## Installation
+
+I recommend the use of [NeoBundle](//github.com/Shougo/neobundle.vim) to
+install.
+
+```vim
+NeoBundle 'hkjels/natural.vim'
+```
+
+
+## License
 
 > The MIT License (MIT)
 >
