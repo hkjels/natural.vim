@@ -15,6 +15,7 @@ please feel free to file an issue or simply don't bother using it.
 * Navigation by row instead of line
 * Consistent yank behavior
 * Simple and global regexes by default
+* Search with smartcase enabled
 
 
 ## Installation

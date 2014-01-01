@@ -3,7 +3,7 @@
 " ===========
 "
 " Author: Henrik Kjelsberg <hkjels@me.com> (http://take.no/)
-" Version: 0.0.2
+" Version: 0.0.3
 "
 
 if exists('g:loaded_natural')
@@ -67,12 +67,15 @@ endif
   set showmatch                       " Show matching parenthesis
   set scrolloff=10                    " Keep the cursor close to center
   set sidescrolloff=10                " and middle
+  set splitbelow                      " New window will appear below the current window
+  set splitright                      " New window will appear to the right of the current window
 " }}}
 
 " Search --------------------------------------------------------------- {{{
   set gdefault                        " Search with global by default
   set hlsearch                        " Highlight terms
-  set smartcase                       " Ignore case if pattern is lowercase
+  set ignorecase                      " Ignore case by default
+  set smartcase                       " Do not ignore case if pattern has uppercase letters
   set incsearch                       " Show search matches as you type
 " }}}
 
