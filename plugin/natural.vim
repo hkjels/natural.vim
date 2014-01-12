@@ -96,6 +96,13 @@ endif
 " Abbreviations -------------------------------------------------------- {{{
   " Open buffer in vertical-split
   cabbrev vb vert sb
+
+  " Open new buffer in vertical-split
+  cabbrev vn vnew
+
+  " Save as sudoer
+  cmap w!! w !sudo tee % >/dev/null
+  cmap x!! x !sudo tee % >/dev/null
 " }}}
 
 " Key-bindings --------------------------------------------------------- {{{
