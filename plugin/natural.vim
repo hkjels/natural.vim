@@ -115,10 +115,6 @@ endif
   " Make yank´s behavior consistent
   nnoremap Y y$
 
-  " Better focus on search matches
-  nnoremap n nzzzv
-  nnoremap N Nzzzv
-
   " Remove highlighted search-query with enter-key
   nnoremap <cr> :nohlsearch<cr>
 
