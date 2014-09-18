@@ -54,7 +54,7 @@ endif
 " }}}
 
 " History -------------------------------------------------------------- {{{
-  set history=32768                   " A longer history
+  set history=8192                    " A longer history
   set undolevels=1000                 " Changing history is useful to
 " }}}
 
